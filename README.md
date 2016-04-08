@@ -1,1 +1,1 @@
-# conky1
+# conky1 for pekwm
