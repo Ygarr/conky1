@@ -23,9 +23,9 @@ gap_y 420
 minimum_size 250 130
 maximum_width 250
 own_window yes
-own_window_type desktop #for pekwm #normal #override
+own_window_type normal #desktop #for pekwm #normal #override
 own_window_transparent yes
-own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
 border_inner_margin 0
 border_outer_margin 0
 alignment tr
@@ -53,14 +53,14 @@ lua_draw_hook_post main
 TEXT
 ${color1}${font ubuntu:size=10}${time %H:%M:%S}
 ${voffset 25}
-${goto 100}${font Ubuntu:size=8,weight:bold}${color}DISKS
-${goto 110}${font Ubuntu:size=7,weight:normal}${color1}size /
-${goto 105}${font Ubuntu:size=9,weight:normal}${color1}${offset 5}${voffset -4}${fs_size /}
-${goto 105}${font Ubuntu:size=7,weight:normal}${color1}size /home   (used)
-${goto 105}${font Ubuntu:size=9,weight:normal}${color1}${offset 5}${voffset -4}${fs_size /home}/${fs_used /home}#fs_free
+${goto 100}${font Ubuntu:size=8:weight:bold}${color}DISKS
+${goto 110}${font Ubuntu:size=7:weight:normal}${color1}size /
+${goto 105}${font Ubuntu:size=9:weight:normal}${color1}${offset 5}${voffset -4}${fs_size /}
+${goto 105}${font Ubuntu:size=7:weight:normal}${color1}size /home   (used)
+${goto 105}${font Ubuntu:size=9:weight:normal}${color1}${offset 5}${voffset -4}${fs_size /home}/${fs_used /home}#fs_free
 
 ${voffset -70}
-${goto 30}${font Ubuntu:size=8,weight:bold}${color}MEM
+${goto 30}${font Ubuntu:size=8:weight:bold}${color}MEM
 
 ${voffset -25}
-${goto 180}${font Ubuntu:size=8,weight:bold}${color}CPU
+${goto 180}${font Ubuntu:size=8:weight:bold}${color}CPU
